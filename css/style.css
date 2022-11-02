@@ -52,7 +52,7 @@ section.strategic{
 div.woman-card{
     height: 400px;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(195, 255, 0);
     margin-bottom: 1rem; 
 }
 div.man-card{
@@ -115,7 +115,7 @@ section.get-start{
 footer{
     width: 100%;
     height: 350px;
-    background-color: #333333;
+    background-color: #111010;
 }
 
 
@@ -124,7 +124,7 @@ footer{
 @media all and (min-width: 790px){
     div.logo,
     div.menu{
-        background-color: red;
+        background-color: rgb(255, 0, 230);
     }
     section.main-cards div.card{
         height: 300px;
