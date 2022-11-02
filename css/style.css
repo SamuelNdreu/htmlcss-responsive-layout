@@ -1,183 +1,171 @@
-
-    /* GENERAL STYLES
- *************************************************/ */
- *{
+/* RESET */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    font-size: 2rem;
-    color: #9792e4;
-    padding: 1rem;
-}
-
 .flex{
     display: flex;
-}
-.flex-column{
-    flex-direction: column;
-}
-.flex-centered{
-    justify-content: center;
-    align-items: center;
-}
-.flex-between{
-    justify-content: space-between;
-}
-.flex-wrap{
     flex-wrap: wrap;
 }
-
 .container{
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: blueviolet;
-}
-.container-cards{
-    width: 100%;
-    margin: 0 auto
-}
-.colorbox{
-    width: 100%;
     margin: 0 auto;
 }
-header{
-    background-color: #0084fd;   
-    color:white;
-    height: 85px;
-    align-items: center;
-}
-footer{
-    background-color: #333333;
-    padding: 3rem;
-
-}
-footer p{
-    padding-bottom: 2rem;
-}
-
-
-/* Div Section */
-div.logo{
-    padding-left: 2rem;
-    background-color: blueviolet;
-}
-
-div.menu{
-    padding-right: 2rem;
-    background-color: blueviolet;
-}
-
-div.menus{
-    display: none;
-}
-
-div.menus ul li{
-    display: inline;
-}
-div.cards{
-    height: 100%;
-}
-div.planning,
-section.benefits,
-section.getstarted{
+.bg-violet{
     background-color: #9792e4;
-
 }
-
-article.card,
-article.plans,
-article.info,
-article.benefit{
-    background-color: #b5ddff;
-    width: 90%;
+/****** MOBILE FIRST ******/
+    /* SCETION HEADER */
+header{
+    height: 6vh;
+    width: 100%;
+    background-color: #0084fd;
+}
+nav{
+    height: 100%;
+    width: 100%;
+}
+div.logo,
+div.menu{
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+}
+/* SECTION MAIN CARDS */
+section.main-cards div.cards{
+    padding: 2.5rem;
+}
+section.main-cards div.card{
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+    margin-bottom: 1rem;
+}
+/* SECTION TWO CARDS  */
+section.strategic{
+    width: 100%;
+    height: 100%;
+    background-color: #9792e4;
+    padding: 2rem;
+}
+div.woman-card{
     height: 400px;
-    border: 1px dashed rgb (0, 0, 0);
-    margin: 1rem auto;
+    width: 100%;
+    background-color: aqua;
+    margin-bottom: 1rem; 
+}
+div.man-card{
+    height: 400px;
+    width: 100%;
+    background-color: white; 
+}
+/* SECTION PARTNER PROFILES */
+div.profiles{
+    padding: 2rem;
+}
+div.title,
+div.profile{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+/* SECTION BENEFITS CARD */
+div.labels{
+    padding: 3rem;
+}
+div.label{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    margin-bottom: 1rem;
 }
 
-section.testimonials{
-    text-align: center;
-}
-p.title{
-  padding-top: 5rem;  
-}
+/* SECTION ABOUT US */
 
-section.aboutus p{
-    padding: 1rem;
+section.about-us{
+    padding: 2rem;
 }
 
-section.getstarted{
-    padding:1rem;
-    text-align: center;
+div.description{
+    width: 100%;
+    height: 700px;
+    background-color: bisque;
+    margin-bottom: 1rem;
+}
+
+div.aside{
+    width: 100%;
+    height: 400px;
+    background-color: bisque;
 }
 
 
-/************************************************
-    SOLUZIONE RESPONSIVE
- ************************************************/
+/* SECTION GET START */
 
-@media screen and (min-width: 768px) {
-    .flex-wrap {
-        flex-direction: row;
-        flex-wrap: wrap;
+section.get-start{
+    padding: 2rem;
+    width: 100%;
+    height: 700px;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: #333333;
+}
+
+
+/******** RESPONSIVE ********/
+
+@media all and (min-width: 790px){
+    div.logo,
+    div.menu{
+        background-color: red;
     }
-    .container {
-        max-width: 750px;
-        margin: 0 auto;
+    section.main-cards div.card{
+        height: 300px;
+        width: calc((100% / 3) - 1rem);
+        margin: 1rem auto;
     }
-
-    article.card {
-        width: calc(100% / 3 - 1rem);
-        margin: 0.5rem;
-        /* height: 300px; */
-    }
-
-    article.card:first-child {
+    section.main-cards div.card:first-child{
         width: calc((100% / 3) * 2 - 1rem);
     }
-    article.info {
-        flex-direction: row;
-        align-items: center;
+    div.label{
+        width: calc((100% / 2) - 1rem);
     }
-    article.benefit {
-        width: calc(100% / 2 - 2rem);
-        flex-wrap: wrap;
+    div.labels{
+        justify-content: space-between;
     }
-            
+
+    div.description{
+        width: 67%;
+        margin-right: 1rem;
+    }
+
+    div.aside{
+        width: 30%;
+    }
 }
 
-@media screen and (min-width: 992px) {
-    .container {
-        max-width: 850px;
-        margin: 0 auto;
+
+@media all and (min-width: 992px){
+    .container{
+        width: 65%;
     }
-    div.menus {
-        display: inline;
+    div.cards{
+        padding: 3rem 0;
     }
-    div.icon {
-        display: none;
-    }
-    div.planning {
-        flex-direction: row;
-        align-items: flex-end;
-        padding: 5rem 10rem;
-    }
-    article.benefit {
-        width: calc(100% / 3 - 2rem);
+    div.section-dev{
         flex-wrap: nowrap;
     }
-    article.card1 {
-        flex-direction: row;
+    div.label{
+        width: calc((100% / 3) - 1rem);
+    }
+    div.labels{
+        justify-content: space-between;
     }
 }
-    
-    
-    
-    
