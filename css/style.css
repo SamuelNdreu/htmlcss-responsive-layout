@@ -36,6 +36,11 @@ h1{
 .container{
     width: 100%;
     margin: 0 auto;
+    background-color: blueviolet;
+}
+.container-cards{
+    width: 100%;
+    margin: 0 auto
 }
 .colorbox{
     width: 100%;
@@ -52,10 +57,12 @@ header{
 /* Div Section */
 div.logo{
     padding-left: 2rem;
+    background-color: blueviolet;
 }
 
 div.menu{
     padding-right: 2rem;
+    background-color: blueviolet;
 }
 
 div.menus{
@@ -115,6 +122,10 @@ section.getstarted{
         width: 90%;
         margin: 0 auto;
     }
+    .container-cards{
+        width: 90%;
+        margin: 0 auto
+    }
 
     article.card{
         width: calc(100% / 3);
@@ -122,7 +133,7 @@ section.getstarted{
 
     }
     article.card:first-child{
-        width: calc((100% / 3)*2);
+        width: calc((100% / 3) * 2);
     }
 }
     
@@ -130,6 +141,10 @@ section.getstarted{
     .container{
         width: 70%;
         margin: 0 auto;
+    }
+    .container-cards{
+        width: 70%;
+        margin: 0 auto
     }
     div.menus{
         display: inline;
