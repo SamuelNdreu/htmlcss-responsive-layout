@@ -1,6 +1,6 @@
 
-    GENERAL STYLES
- *************************************************/
+    /* GENERAL STYLES
+ *************************************************/ */
  *{
     margin: 0;
     padding: 0;
@@ -9,6 +9,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 2rem;
+    color: #9792e4;
+    padding: 1rem;
 }
 
 .flex{
@@ -29,6 +34,10 @@ body{
 }
 
 .container{
+    width: 100%;
+    margin: 0 auto;
+}
+.colorbox{
     width: 100%;
     margin: 0 auto;
 }
@@ -55,4 +64,82 @@ div.menus{
 
 div.menus ul li{
     display: inline;
+}
+div.cards{
+    height: 100%;
+}
+div.planning,
+section.benefits,
+section.getstarted{
+    background-color: #9792e4;
+
+}
+
+article.card,
+article.plans,
+article.info,
+article.benefit{
+    background-color: #b5ddff;
+    width: 90%;
+    height: 400px;
+    border: 1px dashed rgb (0, 0, 0);
+    margin: 1rem auto;
+}
+
+section.testimonials{
+    text-align: center;
+}
+p.title{
+  padding-top: 5rem;  
+}
+
+section.aboutus p{
+    padding: 1rem;
+}
+
+section.getstarted{
+    padding:1rem;
+    text-align: center;
+}
+
+
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+@media screen and (min-width: 480px) {
+    .flex-wrap{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    article.card{
+        width: calc(100% / 3);
+        height: 300px;
+
+    }
+    article.card:first-child{
+        width: calc((100% / 3)*2);
+    }
+}
+    
+@media screen and (min-width: 768px){
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    div.menus{
+        display: inline;
+    }
+    div.icon{
+        display: none;
+    }
+    div.planning{
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 5rem 10rem;
+    }
 }
