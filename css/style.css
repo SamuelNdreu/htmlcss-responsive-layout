@@ -1,10 +1,58 @@
 
     GENERAL STYLES
  *************************************************/
- *,
- *::before,
- *::after{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-centered{
+    justify-content: center;
+    align-items: center;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: #0084fd;   
+    color:white;
+    height: 85px;
+    align-items: center;
+}
+
+
+/* Div Section */
+div.logo{
+    padding-left: 2rem;
+}
+
+div.menu{
+    padding-right: 2rem;
+}
+
+div.menus{
+    display: none;
+}
+
+div.menus ul li{
+    display: inline;
 }
