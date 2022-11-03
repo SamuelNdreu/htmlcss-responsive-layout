@@ -295,7 +295,19 @@ footer{
     div.aside{
         width: 30%;
     }
+    div.aside p{
+        font-size: 1.4rem;
+    }
+    div.aside button {
+        padding: 0.5rem 0.4rem;
+        font-size: 1rem;
+    }
+    section.get-start{
+        padding: 4rem 10rem;
+    }
 }
+
+
 
 
 @media all and (min-width: 992px){
@@ -357,6 +369,11 @@ footer{
         width: 45%;
         margin-left: 4rem;
     }
+    div.start{
+        width: 40%;
+        margin: 0 auto;
+    }
+
 }
 
 
