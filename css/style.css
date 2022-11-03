@@ -8,9 +8,25 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.space-evenly{
+  display: flex;
+  justify-content: space-evenly;  
+}
+
 .container{
     width: 100%;
     margin: 0 auto;
+}
+.style-button{
+    padding: .8rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
 }
 .bg-violet{
     background-color: #9792e4;
@@ -25,13 +41,15 @@ header{
 nav{
     height: 100%;
     width: 100%;
+    
 }
 div.logo,
 div.menu{
-    width: 50%;
-    height: 100%;
-    background-color: aqua;
+ padding: 0 2rem;
+    
 }
+
+
 /* SECTION MAIN CARDS */
 section.main-cards div.cards{
     padding: 2.5rem;
@@ -41,6 +59,42 @@ section.main-cards div.card{
     width: 100%;
     background-color: aqua;
     margin-bottom: 1rem;
+}
+
+div.card h1,
+h2{
+    color: #0084fd;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+div.card p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 2.5rem 0;
+    color: #506272;
+}
+div.card button{
+    font-size: 1.3rem;
+    color: white;
+    background-color: #0084fd;
+    padding: 0.8rem 4rem;
+}
+div.card img{
+    width: 100%;
+    vertical-align: bottom;
+    padding-top: 2.5rem;
+}
+
+div.card > i{
+    color: #0084fd;
+    padding: 1.5rem 0;
+}
+
+.t-center{
+    text-align: center;
+}
+div.menu ul{
+    display: none;
 }
 /* SECTION TWO CARDS  */
 section.strategic{
@@ -122,18 +176,18 @@ footer{
 /******** RESPONSIVE ********/
 
 @media all and (min-width: 790px){
-    div.logo,
-    div.menu{
-        background-color: rgb(255, 0, 230);
-    }
+
     section.main-cards div.card{
-        height: 300px;
         width: calc((100% / 3) - 1rem);
         margin: 1rem auto;
     }
     section.main-cards div.card:first-child{
         width: calc((100% / 3) * 2 - 1rem);
     }
+    div.card img{
+        width: 70%;
+    }
+
     div.label{
         width: calc((100% / 2) - 1rem);
     }
@@ -154,11 +208,22 @@ footer{
 
 @media all and (min-width: 992px){
     .container{
-        width: 65%;
+        width: 60%;
     }
     div.cards{
         padding: 3rem 0;
     }
+    div.text-box,
+    div.img-box{
+        width: 50%;
+    }
+
+    div.card img{
+        width: 100%;
+        vertical-align: bottom;
+        padding: 2.5rem 0 0 7rem;
+    }
+
     div.section-dev{
         flex-wrap: nowrap;
     }
@@ -168,4 +233,23 @@ footer{
     div.labels{
         justify-content: space-between;
     }
+    div.menu i{
+        display: none;
+    }
+    div.menu ul{
+        display: inline-block;
+    }
+    div.menu ul li{
+        display: inline-block;
+        padding: 0 1rem
+    }
+    div.menu a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+    div.menu button{
+        font-size: 1.1rem;
+    }
 }
+
