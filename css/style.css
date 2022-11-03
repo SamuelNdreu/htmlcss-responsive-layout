@@ -93,7 +93,7 @@ h2{
     color: #0084fd;
     font-weight: 800;
     font-size: 1.7rem;
-    text-align: center;
+    
     
 }
 div.card p{
@@ -238,7 +238,8 @@ footer{
 
 @media all and (min-width: 992px){
     .container{
-        width: 60%;
+        width: 65%;
+        
     }
     div.cards{
         padding: 3rem 0;
@@ -281,6 +282,7 @@ footer{
     div.menu button{
         font-size: 1.1rem;
     }
+
 
 }
 
