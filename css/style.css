@@ -134,27 +134,71 @@ section.strategic{
     padding: 2rem;
 }
 div.woman-card{
-    height: 400px;
     width: 100%;
-    background-color: rgb(195, 255, 0);
     margin-bottom: 1rem; 
 }
-div.man-card{
-    height: 400px;
+div.woman-card img{
     width: 100%;
-    background-color: white; 
+    padding: 2.5rem 0;
 }
+div.woman-card h2{
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+}
+div.woman-card p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 2.8rem 0;
+    color: white;
+}
+div.man-card{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 3rem;
+}
+div.man-card img{
+width: 70%;
+}
+div.man-card p{
+    padding:3rem;
+    font-size: 1.3rem;
+}
+div.man-card i{
+    background-color: #9792e4;
+    border-radius: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
 /* SECTION PARTNER PROFILES */
 div.profiles{
     padding: 2rem;
 }
 div.title,
 div.profile{
-    height: 400px;
     width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 4rem;
 }
+div.title span{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+div.title h2{
+    color: #9792e4;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+div.title p{
+    font-size: 1.2rem;
+}
+
 /* SECTION BENEFITS CARD */
 div.labels{
     padding: 3rem;
@@ -282,7 +326,22 @@ footer{
     div.menu button{
         font-size: 1.1rem;
     }
-
-
+    div.section-dev{
+        width: 50%;
+        margin: 0 auto;
+        align-items: flex-end;
+        padding: 5rem 1rem;
+    }
+    div.woman-card{
+        width: 55%;
+    }
+    div.man-card{
+        width: 45%;
+        margin-left: 4rem;
+    }
 }
+
+
+
+
 
